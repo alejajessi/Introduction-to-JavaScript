@@ -85,3 +85,105 @@ if (favoritePhrase) {
   console.log('This string is definitely empty.');
 }
 
+//Inicio de ejercicio Truthy and Falsy Assignment
+//Punto 1. Asigna a writingUtensil el valor de tool y si tool es falsa, asigna un valor por defecto de 'pen'.
+//Punto 2. Re-asignar el valor de tool para marker.
+
+/*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+let tool = '';
+
+tool = 'marker';
+
+// Use short circuit evaluation to assign writingUtensil variable below:
+let writingUtensil = tool || 'pen';
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+//Inicio de ejercicio Ternary Operator
+//Punto 1. Modifique el primer if..else, precisamente el bloque usando un ternary operator.
+//Punto 2. Modifique el segundo if..else, precisamente el bloque usando un ternary operator.
+//Punto 3. Modifique el tercer if..else, precisamente el bloque usando un ternary operator.
+
+/*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+let isLocked = false;
+
+isLocked ?
+  console.log('You will need a key to open the door.') :
+  console.log('You will not need a key to open the door.');
+
+let isCorrect = true;
+
+isCorrect ?
+  console.log('Correct!') :
+  console.log('Incorrect!');
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === 'Love That!' ?
+  console.log('I love that!') :
+  console.log("I don't love that!");
+
+  //Inicio de ejercicio Else if Statements
+  //Punto 1. Agregue un else if, dónde la condición sea
+  //         season === 'winter' y dentro de él, imprima 
+  //         'It\'s winter! Everything is covered in snow.'
+  //Punto 2. Agrege un else if, dónde la condición sea 
+  //         season === 'fall' y dentro de él, imprima 
+  //         'It\'s fall! Leaves are falling!'
+  //Punto 3. Agrege un else if, dónde la condición sea 
+  //         season === 'summer' y dentro de él, imprima 
+  //         'It\'s sunny and warm because it\'s summer!'
+
+  /*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if(season === 'winter') {
+  console.log('It\'s winter! Everything is covered in snow.');
+} else if(season === 'fall') {
+  console.log('It\'s fall! Leaves are falling!');
+} else if(season === 'summer') {
+  console.log('It\'s sunny and warm because it\'s summer!');
+} else {
+  console.log('Invalid season.');
+}
+
+//Inicio de ejercicio The switch keyword
+//Punto 1. Inicialize un switch case.
+//Punto 2. Agregue los siguientes case:
+//         case 1: el valor 'first place' e imprime 'You get the gold medal!'
+//         case 2: el valor 'second place' e imprima 'You get the silver medal!' 
+//         case 3: el valor 'third place' e imprima 'You get the bronze medal!'
+//Punto 3. Agrege un default, e imprima en él lo siguiente
+//         'No medal awarded.'
+
+  /*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+let athleteFinalPosition = 'first place';
+
+switch(athleteFinalPosition){
+  case 'first place' :
+    console.log('You get the gold medal!');
+    break;
+  case 'second place' :
+    console.log('You get the silver medal!');
+    break;
+  case 'third place' :
+    console.log('You get the bronze medal!');
+    break;
+  default:
+    console.log('No medal awarded.');
+    break;
+}
