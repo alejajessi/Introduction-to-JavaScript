@@ -67,3 +67,25 @@ console.log('Hello' + ' ' + 'World');
 //Punto 1. Generar el número de caracteres de la oración 'Teaching the world how to code'
 
 console.log('Teaching the world how to code'.length);
+
+//Inicio de ejercicio methods
+//Punto 1. Usar .toUpperCase() en 'Codecademy'
+//Punto 2. Quitar el espacio del segundo console.log() usando .trim()
+
+ /*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+ // Use .toUpperCase() to log 'Codecademy' in all uppercase letters
+console.log('Codecademy'.toUpperCase());
+
+// Use a string method to log the following string without whitespace at the beginning and end of it.
+console.log('    Remove whitespace   '.trim());
+ 
+//Inicio de ejercicios Built-in Objects
+//Punto 1. Cree un número random y multipliquelo por 100, imprima el resultado
+//Punto 2. Usando el console.log anterior, haga uso de la función Math.floor()
+//Punto 3. Encuentre una función del objeto Math que retorne el entero más grande cercano al resultado.
+//         Realice el ejercicio usando el número 43.8
+console.log(Math.floor(Math.random() * 100));
+console.log(Math.ceil(43.8));
