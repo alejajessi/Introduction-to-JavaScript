@@ -87,5 +87,9 @@ console.log('    Remove whitespace   '.trim());
 //Punto 2. Usando el console.log anterior, haga uso de la función Math.floor()
 //Punto 3. Encuentre una función del objeto Math que retorne el entero más grande cercano al resultado.
 //         Realice el ejercicio usando el número 43.8
+//Punto 4. Encuentre una función del objeto Number que verifique si el parametro es un número entero
+//         Realice el ejercicio usando el número 2017
+
 console.log(Math.floor(Math.random() * 100));
 console.log(Math.ceil(43.8));
+console.log(Number.isInteger(2017));
