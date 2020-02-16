@@ -98,3 +98,50 @@ function costOfMonitors(rows, columns){
 const totalCost = costOfMonitors(5,4);
   
 console.log(totalCost);
+
+//Function expressions
+//Punto 1. Cree una variable llamada plantNeedWater tipo const.
+//         Asigne una función anonima con parametro day a la variable creada en el punto 1.
+//Punto 2. En el cuerpo de la función, realice un if...else. La condición será que day sea
+//         igual a 'Wednesday'.
+//         Además, en el cuerpo del if, retornen true. 
+//Punto 3. En el cuerpo del else, retorne false.
+//Punto 4. Llamar la función plantNeedsWater() e ingrese como parametro 'Tuesday'
+//Punto 5. Imprima el valor del llamado realizado. Debe dar false.
+
+const plantNeedsWater = function(day) {
+    if(day === 'Wednesday'){
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+plantNeedsWater('Tuesday');
+  
+console.log(plantNeedsWater('Tuesday'));
+
+//Inicio de ejercicio arrow functions
+//Punto 1. Modifique la función dada inicialmente a una sintaxis arrows functions.
+
+
+/*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+*/
+
+const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+//Inicio de ejercicio Concise body arrow functions
+//Punto 1. Convierta el código inicial dado en una sola línea.
+
+/*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+*/
+
+const plantNeedsWater = day =>   day === 'Wednesday' ? true : false;
