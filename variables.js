@@ -87,3 +87,18 @@ let myName = 'Jessica Alejandra';
 let myCity = 'Cali';
 console.log(`My name is ${myName}. My favorite city is ${myCity}.`)
 
+//Inicio de ejercicio Typeof Operator
+//Punto 1. Imprima la variable dada inicialmente pero haga uso de typeof.
+//Punto 2. Re asigne un valor númerico. Para este caso use el 1. Por último, imprima.
+//Punto 3. Vuelva a hacer uso del typeof y console.log.
+
+ /*Código copiado de Codecademy
+ Curso: Introduction to JavaScript
+ */
+
+let newVariable = 'Playing around with typeof.';
+
+console.log(typeof newVariable);
+newVariable=1;
+console.log(newVariable);
+console.log(typeof newVariable);
